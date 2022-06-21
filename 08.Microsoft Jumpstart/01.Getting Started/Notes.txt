@@ -1,0 +1,13 @@
+$(document).ready(function(){
+
+
+});
+
+
+$(function(){
+
+
+});
+
+
+//both are same these two run when the document ready.

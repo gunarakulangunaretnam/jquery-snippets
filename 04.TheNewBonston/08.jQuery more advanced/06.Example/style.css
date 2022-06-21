@@ -1,0 +1,22 @@
+#toolTip {
+
+    position:absolute;
+    padding:7px;
+    font-size:14px;
+    color:green;
+    border:1px solid red;
+    background-color:white;
+    display:none;
+    z-index:10;
+
+}
+
+#img{
+
+    width:300px;
+    height:200px;
+    position:relative;
+    top:50px;
+
+
+}

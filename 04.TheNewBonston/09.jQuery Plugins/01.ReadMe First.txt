@@ -1,0 +1,21 @@
+*The jQuery plugins are the easy way to make web applications.
+*We can download them from jqury.com and other websites.
+*You need to normally insert it like we insert jquery.js
+*We need to read the documentation before we use them.
+*There are lots of jquery plugins online for diffrent purposes.
+*We can search them depending on our need and downlaod and use them.
+*But need to read the documentation carefully.
+
+*We can create our own plugins by using some raw jS and JQ.
+
+basic format to make plugins
+
+(function ($) {
+
+
+    $.fn.name=function(){}
+
+
+})(jQuery);
+
+

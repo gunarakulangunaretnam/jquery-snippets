@@ -1,0 +1,12 @@
+#popUpBox {
+
+    position: absolute;
+    top:10px;
+    left:20px;
+    width: 200px;
+    height: 350px;
+    background-color: #f0f0f0;
+    border:1px solid black;
+    display:none;
+  
+}

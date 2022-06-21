@@ -1,0 +1,11 @@
+#hoverText {
+
+    display:none;
+    position:absolute;
+    padding:8px;
+    background-color:gray;
+    border:1px solid black;
+    color:white;
+}
+
+

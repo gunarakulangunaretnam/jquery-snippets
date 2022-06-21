@@ -1,0 +1,158 @@
+body {
+
+    margin:0;
+    padding:0;
+
+}
+
+header {
+    padding-top:10px;
+    width:100%;
+    height:120px;
+    background-color:#103b62;
+
+}
+
+
+#heading {
+
+  
+    font-family:'Arabic Typesetting';
+    font-size:2.5em;
+    color:white;
+    position:relative;
+    top:-40px;
+  
+
+}
+
+    #heading h1 {
+    
+   text-shadow:1px 1px #ff0000;
+  
+   text-align:center;
+    }
+
+#rightSidebar {
+    padding-top:10px;
+    width:280px;
+    height:411px;
+    background-color:#f5ecec;
+     border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    float:left;
+   
+
+
+}
+
+#linksNav {
+
+    width:auto;
+    height:auto;
+    padding:0px;
+    margin:0px;
+
+}
+
+#navigation {
+
+    width:300px;;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    position:relative;
+   left:-30px;
+}
+
+    #navigation ul li {
+    
+        list-style-type:none;
+         font-weight:bold;
+         line-height:40px;
+         width:auto;
+         height:auto;
+         border-bottom:1px solid #ddd8d8;
+    }
+
+        #navigation ul li a {
+        
+        
+           color:#4d7fac;
+           text-decoration:none;
+         
+
+
+        }
+
+            #navigation ul li a:hover {
+            
+                color:green;
+            
+            }
+            #navigation ul li a:active {
+           
+                 color:red;
+            
+            }
+
+
+#rightSideBarContant {
+
+    width:270px;
+  
+    font-family:Arial sans-serif;
+   margin-left:10px;
+   overflow:auto;
+
+}
+
+#rightSideBarButtons {
+
+    width:280px;
+    height:80px;;
+    background-color:#f5ecec;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    position:absolute;
+    bottom:0;
+}
+
+.btns {
+
+    width:80px;
+    height:40px;
+    background-color:#103b62;
+    border-radius:80px;
+    margin-top:30px;
+    margin-left:27px;
+    border:2px solid red;
+
+}
+
+    .btns:hover {
+    
+        background-color:aqua;
+    
+    }
+
+#main_Contant {
+position:absolute;
+left:300px;
+width:770px;
+padding-top:10px;
+overflow:scroll;
+}
+
+#leftSidebar {
+
+   
+    padding-top:10px;
+    width:280px;
+    background-color:#f5ecec;
+     border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    position:absolute;
+    left:1070px;
+   overflow:auto;
+}
