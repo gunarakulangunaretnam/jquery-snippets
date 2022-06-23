@@ -129,7 +129,7 @@ $(document).ready(function () {
 
 ### Output
 
-![Banner Image](github-content/example-1-1-output.png/)
+![Banner Image](github-content/example-1-1-output.gif/)
 
 ### Example 2
 
