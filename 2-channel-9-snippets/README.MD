@@ -605,7 +605,7 @@ $(document).ready(function () {
 
 ### Output
 
-![Banner Image](github-content/example-1-2-output.png/)
+![Banner Image](github-content/example-2-2-output.png/)
 
 ### Example 3
 
@@ -661,7 +661,7 @@ $(document).ready(function () {
 
 ### Output
 
-![Banner Image](github-content/example-1-3-output.png/)
+![Banner Image](github-content/example-2-3-output.png/)
 
 ### Example 4
 
@@ -798,7 +798,7 @@ $(document).ready(function () {
 
 ### Output
 
-![Banner Image](github-content/example-1-5-output.png/)
+![Banner Image](github-content/example-2-5-output.png/)
 
 ### Example 6
 
