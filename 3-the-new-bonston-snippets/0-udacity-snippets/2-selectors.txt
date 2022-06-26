@@ -1,0 +1,39 @@
+1.$("*") //This will select all elements.
+
+2.$(this)
+
+3.$("p.intro")
+
+4.$("p:first")
+
+5.$("p:last")
+
+6.$("ul li:first")
+
+7.$("ul li:first-child")
+
+8.$("[href]")
+
+9.$("a[target='_blank']")
+
+10.$(".intro,.demo")
+
+11.$("h1,div,p")
+
+12.$(":input")
+
+13.$(":text")
+
+14.$(":password")
+
+15.$(":radio")
+
+16.$(":checkbox")
+
+17.$(":submit")
+
+18.$(":button")
+
+19.$(":disabled")
+
+20.$(":checked")
