@@ -2043,3 +2043,798 @@ $(document).ready(function () {
 ### Output
 
 ![Banner Image](github-content/example-5-10-1-output.gif/)
+
+### 11. Append () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="btn_append" type="button" value="Apeend" />
+
+    <h3 id="dis"></h3>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(function () {
+
+    var num = 0;
+
+    $("#btn_append").click(function () {
+
+        $("#dis").append(num++ +" ");
+
+    });
+
+});
+
+//The append is used to append any HTML element or text after an element.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-11-0-output.gif/)
+
+### Example 1
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="name" type="text" />
+
+    <input id="btn_append" type="button" value="Apeend" />
+
+    <h3 id="name_place">Your name is </h3>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#btn_append").click(function () {
+
+        var name = $("#name").val();
+
+        $("#name_place").append(name+" ");
+
+    });
+
+});
+
+//The append keyword is mainly used to add text or elements to end of an selected element.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-11-1-output.gif/)
+
+### Example 2
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+		<link  rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+<body>
+
+    <p><a class="btn" href="#">Software Engineering</a> <a class="btn" href="#">Network Engineering</a> <a class="btn" href="#">Multimedia Engineering</a></p>
+
+    <select id="list"></select>
+
+	<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $(".btn").click(function () {
+
+        $("#list").append("<option>" + $(this).text() + "<option>");
+
+    });
+
+});
+```
+
+### Output
+
+![Banner Image](github-content/example-5-11-2-output.gif/)
+
+### 12. Append to () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="appendTo" type="button" value="AppedTo" /><br />
+
+    <strong id="name">Guna</strong>
+
+    <p id="name_place">My name is: </p>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(function () {
+
+    $("#appendTo").click(function () {
+
+        $("#name").appendTo("#name_place");
+
+    });
+
+});
+
+//The appendTo() takes an element and put into another element.
+//In this example #name_place is the buket.
+//We take the #name and put into #name_place.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-12-0-output.gif/)
+
+### 13. Clone () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="appendTo" type="button" value="AppedTo" /><br />
+
+    <strong id="name">Guna</strong>
+
+    <p id="name_place">My name is: </p>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(function () {
+
+    $("#appendTo").click(function () {
+
+        $("#name").clone().appendTo("#name_place");
+
+    });
+
+});
+
+//clone() is used to clone(copy) an element then appendTo it.
+//The appendTo() takes an element and put into another element.
+//In this example #name_place is the buket.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-13-0-output.gif/)
+
+### 14. Width () and height () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="getHeightAndWidth" type="button" value="Get Height and Width" />
+
+    <div id="box">
+
+    </div>
+
+    <h1 id="dis"></h1>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:300px;
+    height:300px;
+    background-color:red;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#getHeightAndWidth").click(function () {
+
+        var widthVal = $("#box").width();
+        var heightval = $("#box").height();
+
+        $("#dis").text("The width is " + widthVal + " and the height  is " +heightval);
+
+    });
+
+});
+
+//width() keyword is used to get the width of an element.
+//height() keyword is used to get the height of an element
+```
+
+### Output
+
+![Banner Image](github-content/example-5-14-0-output.gif/)
+
+### Example 1
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <input id="getHeightAndWidth" type="button" value="Get Height and Width" />
+
+    <div id="box">
+
+    </div>
+
+    <h1 id="dis"></h1>
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+    width:300px;
+    height:300px;
+    background-color:red;
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(function () {
+
+    $("#getHeightAndWidth").click(function () {
+
+        var width =parseInt($("#box").css("width"))
+        var height=parseInt($("#box").css("height"));
+
+        $("#dis").text("Width:" + width + " Height:" + height + "");
+
+    });
+
+});
+
+//We can also get width and height by using css properties like above.
+//why did i use parseInt() because if we don't put that the result will be like with px sign.
+//But parseInt() will convert it into integer.
+//But this will only return if that has css properties for width and height.
+//If there is an image without an css we need to use the old method.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-14-1-output.gif/)
+
+### Example 2
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>This is the title</title>
+
+        <link  rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+<body>
+
+    <img class="imgs" src="a1.jpg" />
+
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### CSS
+
+```CSS
+#box {
+
+}
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    var window_Width = $(window).width();//We got the window width
+    var window_Heigh = $(window).height();//We got the window height
+
+    $(".imgs").css("width", window_Width).css("height", window_Heigh);
+
+});
+
+//We have assigned The window width and height for all imgs classes.
+```
+
+### Output
+
+![Banner Image](github-content/example-5-14-2-output.png/)
+
+### 15. Scroll Top () Snippets
+
+### Example 0
+
+#### HTML
+
+```HTML
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>This is the title</title>
+
+		<link  rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+<body>
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+
+    This is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kunaThis is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    This is kuna
+    this is knaThis is kunaThis is kunaThis is kuna
+    <br />
+
+    <input id="top" type="button" value="Go the Top" />
+
+	<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+```
+
+#### JavaScript
+
+```JavaScript
+$(document).ready(function () {
+
+    $("#top").click(function () {
+
+        $("body").animate({
+
+            scrollTop:0
+
+        }, "slow")
+
+    });
+
+});
+
+//We have to get body and assign this animate() function than give scrollTop.
+//The second parameter of the animate() function is it's speed."slow fast milliseconds".
+```
+
+### Output
+
+![Banner Image](github-content/example-5-15-0-output.gif/)
