@@ -1,4 +1,4 @@
-# JQUERY SNIPPETS
+# jQuery Snippets
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The main purpose of jQuery is to provide an easy way to use JavaScript on your w
 6. [jQuery Dreak Beans Snippets](5-jquery-dreak-beans-snippets/)
 7. [Microsoft Jumpstart Snippets](6-microsoft-jumpstart-snippets/)
 
-# CONTACT
+# Contact
 
 ### Website: 
 
